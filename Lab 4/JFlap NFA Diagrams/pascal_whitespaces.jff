@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--Created with JFLAP 7.1.--><structure>&#13;
+	<type>fa</type>&#13;
+	<automaton>&#13;
+		<!--The list of states.-->&#13;
+		<state id="0" name="q0">&#13;
+			<x>107.0</x>&#13;
+			<y>339.0</y>&#13;
+			<initial/>&#13;
+		</state>&#13;
+		<state id="1" name="q1">&#13;
+			<x>372.0</x>&#13;
+			<y>248.0</y>&#13;
+			<final/>&#13;
+		</state>&#13;
+		<state id="2" name="q2">&#13;
+			<x>637.0</x>&#13;
+			<y>294.0</y>&#13;
+			<final/>&#13;
+		</state>&#13;
+		<state id="3" name="q3">&#13;
+			<x>759.0</x>&#13;
+			<y>356.0</y>&#13;
+			<final/>&#13;
+		</state>&#13;
+		<state id="4" name="q4">&#13;
+			<x>499.0</x>&#13;
+			<y>421.0</y>&#13;
+			<final/>&#13;
+		</state>&#13;
+		<!--The list of transitions.-->&#13;
+		<transition>&#13;
+			<from>0</from>&#13;
+			<to>4</to>&#13;
+			<read>\r</read>&#13;
+		</transition>&#13;
+		<transition>&#13;
+			<from>0</from>&#13;
+			<to>3</to>&#13;
+			<read>\n</read>&#13;
+		</transition>&#13;
+		<transition>&#13;
+			<from>0</from>&#13;
+			<to>1</to>&#13;
+			<read>space | blank</read>&#13;
+		</transition>&#13;
+		<transition>&#13;
+			<from>0</from>&#13;
+			<to>2</to>&#13;
+			<read>tab | \t</read>&#13;
+		</transition>&#13;
+		<note>&#13;
+			<text>   Pascal Lexical Convention:   
+   2- Whitespaces:
+        
+   R.E. : [ blank | tab | newline ] +  
+        =&gt; [   \t \n \r ] +
+
+   NFA :</text>&#13;
+			<x>169.0</x>&#13;
+			<y>38.0</y>&#13;
+		</note>&#13;
+	</automaton>&#13;
+</structure>

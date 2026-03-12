@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--Created with JFLAP 7.1.--><structure>&#13;
+	<type>fa</type>&#13;
+	<automaton>&#13;
+		<!--The list of states.-->&#13;
+		<state id="0" name="q0">&#13;
+			<x>158.0</x>&#13;
+			<y>234.0</y>&#13;
+			<initial/>&#13;
+		</state>&#13;
+		<state id="1" name="q1">&#13;
+			<x>516.0</x>&#13;
+			<y>156.0</y>&#13;
+			<final/>&#13;
+		</state>&#13;
+		<state id="2" name="q2">&#13;
+			<x>702.0</x>&#13;
+			<y>236.0</y>&#13;
+			<final/>&#13;
+		</state>&#13;
+		<state id="3" name="q3">&#13;
+			<x>520.0</x>&#13;
+			<y>341.0</y>&#13;
+			<final/>&#13;
+		</state>&#13;
+		<!--The list of transitions.-->&#13;
+		<transition>&#13;
+			<from>0</from>&#13;
+			<to>2</to>&#13;
+			<read>-</read>&#13;
+		</transition>&#13;
+		<transition>&#13;
+			<from>0</from>&#13;
+			<to>3</to>&#13;
+			<read>or</read>&#13;
+		</transition>&#13;
+		<transition>&#13;
+			<from>0</from>&#13;
+			<to>1</to>&#13;
+			<read>+</read>&#13;
+		</transition>&#13;
+		<note>&#13;
+			<text>   Pascal Lexical Convention:   
+   6- addop:
+        
+   R.E. :   + | - | or   
+
+   NFA :</text>&#13;
+			<x>192.0</x>&#13;
+			<y>36.0</y>&#13;
+		</note>&#13;
+	</automaton>&#13;
+</structure>

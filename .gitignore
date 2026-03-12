@@ -1,5 +1,5 @@
-# Ignore working folder
-working/
+# Ignore private folder
+private/
 
 # Ignore Python cache files
 __pycache__/
