@@ -254,3 +254,21 @@ All four approaches produce **identical token streams** on the same input, verif
 | Bonus — Compressed Table  | ~0.33 ms (small overhead from dict lookup vs list index) |
 
 ---
+
+## How to Run
+
+```bash
+# Navigate to the src directory
+cd src
+
+# Run all four approaches and compare
+python3 main.py program.pascal
+
+# Run a single approach
+python3 approach1_state_based.py program.pascal
+python3 approach2_stateless.py program.pascal
+python3 approach3_table_driven.py program.pascal
+python3 bonus_compressed_table.py program.pascal
+```
+
+---
